@@ -1,4 +1,6 @@
 <?php
+
+//For each user, we can have which school they attend so that they do not have to filter by result. Maybe even have some restrictions to other schools.
 function fb_wp_insert_user() {
     for ($i = 0; $i <= 100; $i+=1) {
         //This is to initialize the proper date and time the user was registered
@@ -11,11 +13,11 @@ function fb_wp_insert_user() {
         $user_data = array(
         'ID' => '',
         'user_pass' => wp_generate_password(),
-        'user_login' => //this should be without emails'',
+        'user_login' => , //this should be without emails''
         'user_nicename' => 'Dummy',
         'user_url' => 'https://www.skipclasses.com/wp-login.php',
-        'user_email' => 'dummy@example.com' //need email for this section as well,
-        'display_name' => 'Dummy',
+        'user_email' => 'dummy@example.com', //need email for this section as well
+        'display_name' => 'Dummy', //we can just use the ID for the display name
         'first_name' => 'Dummy',
         'user_registered' => $current_time,
         'role' => get_option('default_role') // Use default role or another role, e.g. 'editor'. May need to see what the user roles are in the Wordpress website first.
