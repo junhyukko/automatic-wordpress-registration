@@ -14,9 +14,8 @@ function fb_wp_insert_user() {
         'user_login' => //this should be without emails'',
         'user_nicename' => 'Dummy',
         'user_url' => 'https://www.skipclasses.com/wp-login.php',
-        'user_email' => 'dummy@example.com',
+        'user_email' => 'dummy@example.com' //need email for this section as well,
         'display_name' => 'Dummy',
-        'nickname' => 'dummy',
         'first_name' => 'Dummy',
         'user_registered' => $current_time,
         'role' => get_option('default_role') // Use default role or another role, e.g. 'editor'. May need to see what the user roles are in the Wordpress website first.
